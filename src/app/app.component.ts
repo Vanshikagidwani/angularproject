@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firstapp';
+  constructor(){
+    setTimeout(() => {
+      this.title="changed title";
+      
+    }, 5000);
+  }
 }
